@@ -1,0 +1,166 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #797b7e;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 15px;
+    background: #3f4041;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+header nav a:hover {
+    background: #ec0aec;
+}
+
+/* Carrusel */
+.auto-carousel {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    width: 100%;
+    animation: slide 15s infinite linear;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    40%, 60% { transform: translateX(-100%); }
+    80%, 100% { transform: translateX(-200%); }
+}
+
+/* Sección de clases */
+.opcion {
+    background: #797b7e;
+    color: #fff;
+    padding: 10px;
+    margin: 15px auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.class-images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Membresías */
+.membresias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.membresia {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.membresia:hover {
+    transform: scale(1.05);
+}
+
+.membresia h3 {
+    color: #007bff;
+}
+
+.membresia button {
+    background-color: #797b7e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.membresia button:hover {
+    background-color: #ec0aec;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav a {
+        font-size: 0.9rem;
+        margin: 5px;
+        padding: 5px 10px;
+    }
+
+    .membresia {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

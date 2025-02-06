@@ -1,0 +1,88 @@
+/* ===== Estilos Generales ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Formulario ===== */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px;
+}
+
+/* Título del formulario */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* ===== Campos de Entrada ===== */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+}
+
+/* ===== Botón de Enviar ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #797b7e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ec0aec;
+}
+
+/* ===== Mensajes de error ===== */
+.mensaje-error {
+    color: red;
+    background: #ffe5e5;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ===== Enlaces ===== */
+.registrarse, .volver {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #797b7e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registrarse:hover, .volver:hover {
+    color: #ec0aec;
+    text-decoration: underline;
+}
